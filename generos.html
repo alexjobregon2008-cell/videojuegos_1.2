@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Géneros de videojuegos y motores para crearlos.">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Géneros | Desarrollo de Videojuegos</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor encabezado">
+            <a class="logo" href="index.html">🎮 Desarrollo de Videojuegos</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="imagenes.html">Imágenes</a></li>
+                    <li><a href="generos.html" class="activo">Géneros</a></li>
+                    <li><a href="creador.html">Creador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h1>Géneros y motores</h1>
+
+        <h2>¿Qué tipo de juego te gusta?</h2>
+        <p>Elige un género y te explicaremos de qué trata.</p>
+        <select id="genero">
+            <option value="">-- Selecciona un género --</option>
+            <option value="accion">Acción</option>
+            <option value="aventura">Aventura</option>
+            <option value="estrategia">Estrategia</option>
+            <option value="deportes">Deportes</option>
+        </select>
+        <button class="boton" id="boton">Ver descripción</button>
+        <p id="mensaje">Aquí aparecerá la descripción.</p>
+
+        <h2>Motores de juego</h2>
+        <p>Un motor es el programa que reúne gráficos, sonido y física para crear un juego sin empezar desde cero.</p>
+        <table>
+            <tr>
+                <th>Motor</th>
+                <th>Lenguaje</th>
+                <th>Ideal para</th>
+            </tr>
+            <tr>
+                <td>Unity</td>
+                <td>C#</td>
+                <td>Juegos móviles e indie</td>
+            </tr>
+            <tr>
+                <td>Unreal Engine</td>
+                <td>C++ y Blueprints</td>
+                <td>Gráficos realistas en 3D</td>
+            </tr>
+            <tr>
+                <td>Godot</td>
+                <td>GDScript y C#</td>
+                <td>Juegos 2D, gratuito</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>Desarrollo de Videojuegos · Parcial 2 · Desarrollo de Software V</p>
+            <p>Hecho por Alex Obregón · <a href="#">Volver arriba ↑</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
